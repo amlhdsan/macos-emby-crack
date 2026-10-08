@@ -10,10 +10,9 @@ macOS 破解 emby 官方客户端（也适用于 iOS）
 3. 右键（iOS 上是长按），点击「编辑纯文本」，并在文件末尾（最下方）加上：
    ```
    [Script]
-EmbyPremiere = type=http-response,script-path=https://gitlab.com/iptv-org/embypublic/-/raw/master/Script/EmbyPremiere.js,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,max-size=131072,requires-body=true,timeout=10,enable=true
-
-[MITM]
-hostname = mb3admin.com
+   EmbyPremiere = type=http-response,script-path=https://gitlab.com/iptv-org/embypublic/-/raw/master/Script/EmbyPremiere.js,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,max-size=131072,requires-body=true,timeout=10,enable=true
+   [MITM]
+   hostname = mb3admin.com
    ```
 4. 点击保存
 5. 再次右键，点击「编辑配置」，点击「HTTPS」解密，打开「HTTPS 解密」，此时，系统会提示进行证书安装。
